@@ -1,4 +1,4 @@
-# API Sederhana Register Member UAS Project
+# API Sederhana Register Member - UAS Project
 
 <h3>Terdapat 4 API yaitu API untuk menambah data, mengubah data, menghapus data, dan melihat data</h3>
 
