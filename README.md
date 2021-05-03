@@ -4,7 +4,7 @@
 
 <h3>API mengambil seluruh data user dengan method GET (http://[namadomainanda]/api/getAllUser.php)</h3>
 
-<img width="1171" alt="Screen Shot 2021-05-03 at 11 31 12" src="https://user-images.githubusercontent.com/52843714/116841429-612ab400-ac03-11eb-90ff-56848feac0f4.png">
+<img width="1171" alt="Screen Shot 2021-05-03 at 11 31 12" src="https://user-images.githubusercontent.com/52843714/116907851-59ebc080-ac6c-11eb-87f0-9a3af2854eb8.jpg">
 
 <h3>API menambah data user dengan method POST (http://[namadomainanda]/api/addUser.php)</h3>
 
