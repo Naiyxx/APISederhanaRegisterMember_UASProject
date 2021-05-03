@@ -1,0 +1,151 @@
+FORMAT: 1A
+HOST: localhost/
+
+# UAS PROJECT
+
+API Sederhana Register Member
+
+## Data - Data Member [/apiuph]
+
+### Penngecekan Data Member [GET/apiuph/getAllUser.php]
+
++ Response 200 (application/json)
+
+        {
+        "result": [
+        {
+            "id": "2",
+            "name": "andy",
+            "email": "nihal93@gmail.com",
+            "password": "12345678"
+        },
+        {
+            "id": "3",
+            "name": "Lana",
+            "email": "lana96@gmail.com",
+            "password": "87654321"
+        },
+        {
+            "id": "4",
+            "name": "Catalina",
+            "email": "catalina@gmail.com",
+            "password": "12345678"
+        },
+        {
+            "id": "5",
+            "name": "Nancy",
+            "email": "nancy@gmail.com",
+            "password": "12345678"
+        },
+        {
+            "id": "6",
+            "name": "Handako Jeffr",
+            "email": "handako@gmail.com",
+            "password": "12345678"
+        },
+        {
+            "id": "7",
+            "name": "Marco",
+            "email": "marco@gmail.com",
+            "password": "12345678"
+        },
+        {
+            "id": "8",
+            "name": "",
+            "email": "",
+            "password": ""
+        },
+        {
+            "id": "10",
+            "name": "Michael Salim",
+            "email": "mikel@gmail.com",
+            "password": "321321"
+        }
+    ]
+}
+
+### Menambah Data Member [POST/apiuph/addUser.php]
+
++ Request (application/json)
+
+        {
+        "Task Data": [
+        {
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+        }
+        ]
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /project/post.php
+
+    + Body
+
+            {
+            "Task Data": [
+            {
+                "name": "",
+                "email": "",
+                "password": "",
+            },
+            ]
+            }
+            
+### Update Data Member [POST/apiuph/updateUser.php]
+
++ Request (application/json)
+
+        {
+        "Task Status": [
+        {
+            $id = $_POST["id"];
+            $name = $_POST["name"];
+        }
+        ]
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /project/update.php
+
+    + Body
+
+            {
+            "Task Status": [
+            {
+               "User Updated Sucessfully. "
+            },
+            ]
+            }
+            
+### Menghapus Data Member [GET/apiuph/deleteUser.php]
+
++ Request (application/json)
+
+        {
+        "Status Data Task": [
+        {
+            $id = $_GET["id"];
+        }
+        ]
+        }
+        
+        + Response 201 (application/json)
+
+    + Headers
+
+            Location: /project/delete
+
+    + Body
+
+            {
+            " User Successfully Deleted. "
+            ]
+            }
